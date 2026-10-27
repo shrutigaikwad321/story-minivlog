@@ -10,7 +10,7 @@ const dataDirectory = process.env.DATA_DIR || __dirname;
 const dataFile = path.join(dataDirectory, "posts.json");
 
 app.use(express.json({ limit: "20kb" }));
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "Public")));
 
 function readPosts() {
     try {
